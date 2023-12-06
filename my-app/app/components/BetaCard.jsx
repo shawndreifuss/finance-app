@@ -18,7 +18,7 @@ const [display, setDisplay] = useState(true)
 const displayed = function() {
    setDisplay(false);
  }
-console.log(display)
+
  
 
     
