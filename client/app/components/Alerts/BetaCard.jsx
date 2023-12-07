@@ -2,22 +2,13 @@
 import React from 'react'
 import { useState } from 'react'
 
-
-
 const BetaCard = () => {
-
-
-
-
-
-
-
-
 const [display, setDisplay] = useState(true)
 
 const displayed = function() {
    setDisplay(false);
  }
+
 
  
 
