@@ -18,7 +18,7 @@ const UserSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true,
-        unique: true,
+         unique: true,
         trim:true,
         max: 50,
     },
@@ -29,12 +29,6 @@ const UserSchema = new mongoose.Schema({
         min: 6,
         
     },
-    profilePicture: {
-        type: String,
-        default: "",
-    },
-    
-   
 },
 {
     toJSON: {

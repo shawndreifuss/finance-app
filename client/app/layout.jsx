@@ -1,5 +1,8 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Script from 'next/script'
+import '../utils/index'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +14,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+      <Script
+          src="https://unpkg.com/tailwindcss-jit-cdn"
+          strategy="beforeInteractive"
+        />
+        <Script src="../utils/index'" />
+      </head>
       <body className={inter.className}>{children}</body>
+
     </html>
   )
 }

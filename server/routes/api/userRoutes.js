@@ -1,12 +1,14 @@
 const router = require('express').Router();
-// const { User } = require('../../models');
+const {
+  getUsers,
+  getSingleUser,
+ 
+} = require('../../controllers/userController');
 
+// /api/users
+router.route('/').get(getUsers)
 
-// Get a User  
-// router.get("/", async (req, res) => {
-//     try {
-//       res.send("made it to the user route")
-//     }catch (err) {
-//       res.status(500).json(err);
-//     }
-// });
+// /api/users/:userId
+router.route('/:userId').get(getSingleUser);
+
+module.exports = router;
