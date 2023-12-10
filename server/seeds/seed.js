@@ -27,6 +27,7 @@ connection.once('open', async () => {
       last,
       email: "test@test.com",
      password: Math.floor(Math.random() * (99 - 18 + 1) + 18),
+     profileImg: `https://source.unsplash.com/random/300x200?sig=${Math.random()}`
     });
   }
 

@@ -29,6 +29,10 @@ const UserSchema = new mongoose.Schema({
         min: 6,
         
     },
+    profileImg: {
+        type: String,
+        default: "",
+    },
 },
 {
     toJSON: {

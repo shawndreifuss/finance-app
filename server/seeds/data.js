@@ -24,8 +24,6 @@ const names = [
   'Abdulkarem',
   'Smith',
   'Jones',
-  'Coollastname',
-  'enter_name_here',
   'Ze',
   'Zechariah',
   'Zeek',
@@ -68,45 +66,6 @@ const names = [
   'Parker',
 ];
 
-const appDescriptions = [
-  'Decision Tracker',
-  'Find My Phone',
-  'Learn Piano',
-  'Starbase Defender',
-  'Tower Defense',
-  'Monopoly Money Manager',
-  'Movie trailers',
-  'Hello world',
-  'Stupid Social Media App',
-  'Notes',
-  'Messages',
-  'Email',
-  'Compass',
-  'Firefox',
-  'Running app',
-  'Cooking app',
-  'Poker',
-  'Deliveries',
-];
-
-const possibleTags = [
-  'html',
-  'css',
-  'javascript',
-  'typescript',
-  'go',
-  'cpp',
-  'python',
-  'rust',
-  'React',
-  'React Native',
-  'NextJS',
-  'Tailwind',
-  'Vue',
-  'mongodb',
-  'sql',
-];
-
 const users = [];
 
 // Get a random item given an array
@@ -145,5 +104,9 @@ const getApplicationTags = (int) => {
   return results;
 };
 
+const getRandomProfileImages = () => {
+  const url = `https://source.unsplash.com/random/300x200?sig=${Math.random()}`
+}
+
 // Export the functions for use in seed.js
-module.exports = { getRandomName, getRandomApplications };
+module.exports = { getRandomName,getRandomProfileImages };
